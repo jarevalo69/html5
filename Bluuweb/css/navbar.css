@@ -1,0 +1,15 @@
+.nav-enlace{
+    background-color:#EBA83A ;
+    color: #BB371A;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background-color:#BB371A ;
+    color: #EBA83A;
+}
+nav{
+    background-color:#D5DBB3;
+    padding: 10px;
+}

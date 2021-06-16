@@ -1,0 +1,20 @@
+
+h2{
+    color: red;
+}
+h1{
+    color: aquamarine;
+}
+#unico{
+    color: blue;
+    font-size: 60px;
+}
+.verde{
+    color: rgb(7, 48, 7);
+}
+.rojo{
+    color: red;
+}
+.fondo{
+    background-color:#4444;
+}
