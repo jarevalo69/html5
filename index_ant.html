@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+	<title>Mi pagina en HTML5</title>
+	<style type="text/css">
+		header
+		{
+			background-color: #000000;
+			color: #FFFFFF;
+		}
+		nav
+		{background-color: #4169E1;}
+		article
+		{background-color: #3CB371;}
+		aside
+		{background-color: #CD853F;}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		Aquí el encabezado de la pag hmtl 5
+	</header>
+	<nav>
+		<ul><li>Inicio</li>
+			<li>Contacto</li>
+		</ul>
+	</nav>
+
+	<hgroup>
+		<h1>Crossfit para dummies</h1>
+		<h2>practica HTML 5</h2>
+	</hgroup>
+	<canvas id="miCanvas" width="300" height="300">Tu navegador no puede mostrar este contenido
+	</canvas>
+	<script type="text/javascript" charset="utf-8">
+		var canvas = document.getElementByid("miCanvas");
+		var ctx = canvas.getContext("2d");
+		ctx.fillRect(0,0,20,20);
+	</script>
+	<audio controls="controls" loop="loop" preload="none">
+		<source src="song.mp3" type="audio/mp3"/>
+		<source src="song.ogg" type="audio/ogg"/>
+		tu navegador no es compatible con HTML5
+	</audio>
+
+	<input list="canalesYtube"/>
+	<datalist id="canalesYtube">
+		<option value="Opcion 1"></option>			
+		<option value="Opcion 2"></option>
+		<option value="Opcion 3"></option>
+	</datalist>
+
+	<details>
+		<summary>titulo de details</summary>
+		Aqui van los details sin que se abra de inicio
+	</details>
+
+	<details open="true">
+		<summary>titulo de details2</summary>
+		Aqui van los details con open true
+	</details>
+	<hr>
+	<p> Aqui 
+	<figure>
+		<img src="img.jpeg"/>
+		<figcaption>Logo oficial</figcaption>
+	</figure>va un texto </p>
+	<hr>
+	<p> Aqui 
+		<img src="img.jpeg"/>va un texto </p>
+
+	<p><mark>AMRAP - As Many Repetitions (or Rounds) As Possible:</mark> Todas las repeticiones (o rondas) posibles.
+	</p>
+
+	<p><mark style="background-color:red;">EMOM - Every Minute on the Minute:</mark> Hacer un número determinado de repeticiones dentro de cada
+	</p>
+
+	<p>Meter <meter value="7" max="10" min="0" >tu anvegador no reconoce este control</meter>
+
+	<p>Meter Temperatura menor <meter value="7" max="100" min="0" high="35" low="10" optimum="25">tu anvegador no reconoce este control</meter>
+	<p>Meter Temperatura mayor<meter value="55" max="100" min="0" high="35" low="10" optimum="25">tu anvegador no reconoce este control</meter>
+	<p>Meter Temperatura optima<meter value="25" max="100" min="0" high="35" low="10" optimum="25">tu anvegador no reconoce este control</meter>
+
+		<form oninput="resultado.value=parseInt(x.value) + parseInt(y.value)">
+			<input type="number" name="x">
+			<input type="number" name="y">
+			
+			<output name="resultado" for="x y"></output>		
+		</form>
+	
+
+		<p><progress value="50" max="100">Tu navegador no soporta este control</progress>
+		<p><progress value="10" max="100">Tu navegador no soporta este control</progress>
+
+		<p>la hora es: <time>08:11</time>
+		<p>la fecha es: <time datetime="2021-06-16">pubdate</time>
+
+		<p><video width="320" height="240" controls="controls" muted="muted" poster="img.jpeg">
+			<source src="video.mp4" type="video/mp4">
+			<source src="video.ogg" type="video/ogg">
+			Tu navegador no es compatible con HTML5
+		</video>
+
+		<p draggable="true">parrafo ejejmplo arrastar</p>
+		<p contenteditable="true">parrafo ejejmplo editable</p>
+		<p contenteditable="true" spellcheck="true">parrafo ejejmplo ortografia</p>
+		<p hidden="false">parrafo ejejmplo  hiden </p>
+		<h1>nombre ejercicios crossfit</h1>
+		<h2>vocabulario crossfit</h2>
+	</hgroup>
+	
+	<section>
+		<article>
+			En esta sección se pone el texto del artículo principal
+		</article>
+		<aside>aqui va la otra info secundaria, widgets, post, redes sociales</aside>
+	</section>
+</body>
+</html>
