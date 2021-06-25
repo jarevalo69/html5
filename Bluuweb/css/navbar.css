@@ -12,4 +12,30 @@
 nav{
     background-color:#D5DBB3;
     padding: 10px;
+    display: flex;
+    justify-content:space-around;
+}
+.nav-boton{
+    background-color:#EBA83A ;
+    color: #BB371A;
+    padding: 10px 0;
+    border: 2px solid white;
+    display: none;
+}
+
+@media (max-width: 600px){
+    nav{
+        background-color: black;
+        flex-direction: column;
+    }
+    .nav-boton{
+        display:inline-block;
+    }
+    .nav-enlace{
+        margin: 10px 0px;
+        padding: 10px 0;
+    }
+    .desaparece{
+        display: none;
+    }
 }
