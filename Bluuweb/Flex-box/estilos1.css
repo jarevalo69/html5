@@ -1,0 +1,39 @@
+.padre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.cabecera,  .articulo, .izquierda, .derecha, .pie{
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 10px;
+}
+@media all and (min-width: 600px){
+    .aside{flex: 1 1 auto;}
+}
+@media all and (min-width: 800px){
+    .articulo{flex:2 0;}
+    .izquierda{order: 1;}
+    .articulo{order: 2;}
+    .derecha{order: 3;}
+    .pie{order: 4;}
+}
+
+.cabecera{
+    background: chartreuse;
+}
+.articulo{
+    background: chocolate;
+}
+.izquierda{
+    background: cornflowerblue;
+}
+.derecha{
+    background: darkgreen;
+    color: #fff;
+}
+.pie{
+    background: darkslateblue;
+    color: #fff;
+}

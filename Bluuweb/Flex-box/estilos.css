@@ -1,0 +1,28 @@
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: chocolate;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+
+}
+.hijos{
+    width: 200px;
+    height: 100px;
+    background: darkcyan;
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    flex: 1 1 auto;
+}
+.otro{
+    align-self: stretch;
+    height: auto;
+}

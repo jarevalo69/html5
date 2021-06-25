@@ -13,6 +13,7 @@ h2{
 }
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .texto-centrado{
@@ -23,10 +24,12 @@ h2{
     background-color:aliceblue;
     color:darkslategray;
     border: 1px solid darkslategray;
-    margin: 10px; 
+    margin: 0 auto; 
     padding: 10px;
     border-radius: 25px;
     box-shadow: 10px 10px 5px grey;
+    width: 23%;
+    box-sizing: border-box;
 }
 
 .precio{
@@ -44,4 +47,18 @@ h2{
 }
 .btn-precio:hover{
     background: rgb(233, 54, 34);
+}
+
+@media (max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
