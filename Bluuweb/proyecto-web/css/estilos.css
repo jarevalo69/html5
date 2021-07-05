@@ -145,10 +145,9 @@ a{
         }
             .publicidad{
                 /* background: #FF616D; */
-                
             }
             .aside img{
-                /* width: 100%; */
+                width: 100%;
                 width:fit-content;
             }
             .aside h4{
@@ -165,8 +164,7 @@ a{
     }
         .pie{
             /* background: #A0937D; */
-            text-align: center;
-            
+            text-align: center; 
         }
         .pie a{
             color: #fff;
@@ -175,17 +173,36 @@ a{
             padding: 0 10px;
             letter-spacing: 2px;
         }
-@media all and (max-width: 800px){
+@media all and (max-width: 822px){
     .section{
-        flex-direction: column;
+         flex-direction: column; 
     }
     .menu{
         flex-direction: column;
         height: auto;
     }
     .aside{
-        display: flex;
+        display:grid;
         justify-content: center;
+        flex-direction:column;
+    }
+    .aside img{
+        width: 100%;
+        width:fit-content;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .texto-principal{
+        height: 400px;
+    }
+}
+@media all and (max-width: 650px){
+    .off{
+        display: none;
+    }
+    .nav a{
+        font-size: 25px;
     }
 }
 @media all and (max-width: 600px){
